@@ -25,6 +25,34 @@ body {
     gap: 18px;
 }
 
+.title {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 72px;
+}
+
+.main-text {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 78px;
+    margin: 16px 0;
+}
+
+.sub-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.b-sign-up {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
