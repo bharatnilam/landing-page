@@ -7,9 +7,23 @@ body {
     background-color: #1f2937;
     margin: 0;
     padding: 16px;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.header::before {
+    content:"";
+    background-color:#1f2937;
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
 }
 
 .header__logo {
@@ -22,28 +36,42 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
-    gap: 18px;
+    gap: 16px;
 }
 
 .title {
     background-color: #1f2937;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 72px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title::before {
+    content:"";
+    background-color:#1f2937;
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
 }
 
 .main-text {
     color: #f9faf8;
     font-weight: 900;
-    font-size: 78px;
-    margin: 16px 0;
+    font-size: 48px;
+    margin: 48px 0 32px;
+    width: 50%;
 }
 
 .sub-text {
     color: #e5e7eb;
     font-size: 18px;
-    margin: 16px 0;
+    margin: 32px 0;
+    width: 50%;
 }
 
 .b-sign-up {
@@ -51,6 +79,10 @@ body {
     color: #f9faf8;
     font-size: 18px;
     font-weight: bold;
+    margin: 16px 0 48px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    border: none;
 }
 
 .footer {
