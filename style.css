@@ -59,19 +59,21 @@ body {
     z-index: -1;
 }
 
+.title__left {
+    width: 40%;
+}
+
 .main-text {
     color: #f9faf8;
     font-weight: 900;
     font-size: 48px;
     margin: 48px 0 32px;
-    width: 50%;
 }
 
 .sub-text {
     color: #e5e7eb;
     font-size: 18px;
     margin: 32px 0;
-    width: 50%;
 }
 
 .b-sign-up {
@@ -85,10 +87,29 @@ body {
     border: none;
 }
 
+.title__right {
+    width: 40%;
+}
+
+.title__right img {
+    max-width: 80%;
+    max-height: 80%;
+    vertical-align: middle;
+    margin: 72px 0;
+}
+
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 16px;
+    /* padding: 16px;
     margin: auto;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
