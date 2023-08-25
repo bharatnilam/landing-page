@@ -5,7 +5,6 @@ body {
 
 .header {
     background-color: #1f2937;
-    margin: 0;
     padding: 16px;
     width: 80%;
     margin: 0 auto;
@@ -146,7 +145,41 @@ body {
     color: #29374a;
 }
 
+.quote {
+    background-color: #e5e7eb;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
+.quote::before {
+    content:"";
+    background-color:#e5e7eb;
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
+}
+
+.quote-content {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+    width: 80%;
+    margin: 72px auto 16px;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: end;
+    margin-bottom: 72px;
+    width: 90%;
+}
 
 .footer {
     background-color: #1f2937;
